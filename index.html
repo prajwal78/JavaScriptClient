@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="mainApp" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Test Assignment UI</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body ng-controller="mainController">
+    <div class="container navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper">
+                <ul class="right">
+                    <li><a ng-href="#/home">Home</a></li>
+                    <li><a href="" ng-click="redirectToRegistrationPage()">Register Company</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div ng-view class="container">
+    </div>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/angular/angular-route.min.js"></script>
+    <script src="js/angular/angular-resource.min.js"></script>
+    <script src="modules/mainApp.js"></script>
+    <script src="modules/controllers.js"></script>
+    <script src="modules/services.js"></script>
+    <script src="services/companyService.js"></script>
+    <script src="controllers/mainController.js"></script>
+    <script src="controllers/registerController.js"></script>
+    <script src="controllers/companyDetailsController.js"></script>
+    <script src="controllers/updateCompanyDetailsController.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>

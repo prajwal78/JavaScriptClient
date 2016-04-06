@@ -1,0 +1,90 @@
+<br>
+<br>
+<div id="primary" class="col m12 l3 container z-depth-2">
+    <main id="main" class="site-main" role="main">
+        <article id="post-22" class="post-22 page type-page status-publish hentry">
+            <div class="card">
+                <header class="entry-header">
+                    <h2 class="entry-title no-image"><span class="card-title1">Company Registration</span></h2>
+                </header>
+                <div class="card-content">
+                    <div class="entry-content">
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="company_id" type="number" class="validate" ng-model="company.company_id" required="" aria-required="true">
+                                        <label for="company_id">Company ID</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input id="name" type="text" class="validate" ng-model="company.name" required="" aria-required="true">
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="address" type="text" class="validate" ng-model="company.address" required="" aria-required="true">
+                                        <label for="address">Address</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="city" type="text" class="validate" ng-model="company.city" required="" aria-required="true">
+                                        <label for="city">City</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="country" type="text" class="validate" ng-model="company.country" required="" aria-required="true">
+                                        <label for="country">Country</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate" ng-model="company.email">
+                                        <label for="email">Email (optional)</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="number" class="validate" ng-model="company.phone_number">
+                                        <label for="email">Phone Number (optional)</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                <label1 for="directors">Directors</label1>
+                                    <div class="input-field col s12" ng-repeat="director in directors">
+                                        <input id="director" type="text" class="validate" ng-model="director.name" required="" aria-required="true" required="" aria-required="true">
+                                        <label for="director">Director</label>
+                                    </div>
+                                    <a class="waves-effect waves-light btn-small" ng-click="addDirectors()">Add</a>
+                                </div>
+                                <div class="row">
+                                    <label1 for="directors">Owners</label1>
+                                    <div class="input-field col s12" ng-repeat="owner in owners">
+                                        <input id="owner" type="text" class="validate" ng-model="owner.name">
+                                        <label for="owner">Owner</label>
+                                    </div>
+                                    <a class="waves-effect waves-light btn-small" ng-click="addOwners()">Add</a>
+                                </div>
+                                <div class="row2">
+                                    <span class="form-actions">
+                            <button class="btn waves-effect waves-light light-blue darken-4" ng-click="registerNewCompany(company.company_id,company.name,company.address,company.city,company.country,company.email,company.phone_number,directors,owners)"> <i class="mdi-content-send right"></i>Submit</button>
+                            <br>
+                            <h6>{{message}}</h6>
+                        </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- .entry-content -->
+                </div>
+            </div>
+            <!-- .card -->
+        </article>
+        <!-- #post-## -->
+    </main>
+    <!-- #main -->
+</div>
+<br>
+<br>

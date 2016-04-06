@@ -1,0 +1,207 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media all and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  .tesco_img img {
+    margin-left:25px;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+  nav {
+        width: 80%;
+    }
+    .row .col.l6{
+      padding-left: 30px;
+    }
+    .row .col.l3 {
+      padding-left: 30px;
+    }
+    .footer-copyright{
+      padding-left: 20px;
+    }
+}
+
+@media all and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+.hometopmargin{
+  margin-top: 50px;
+}
+
+.card .card-title1 {
+color: #2061AE;
+font-size: 10px;
+padding-left: 5px;
+}
+
+nav {
+        width: 90%;
+    }
+    .row .col.l6{
+      padding-left: 30px;
+    }
+
+    .row .col.l3 {
+      padding-left: 30px;
+    }
+    .footer-copyright{
+      padding-left: 20px;
+    }
+    .container .row2 {
+  padding-left: 0px;
+}
+}
+
+@media all and (min-width: 993px) {
+    nav {
+        width: 70%;
+    }
+    .row .col.l6{
+      padding-left: 30px;
+    }
+
+    .row .col.l3{
+      padding-left: 100px
+    }
+    .footer-copyright{
+      padding-left: 20px;
+    }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.error{
+  color:red;
+}
+
+.textInline{
+  display:inline;
+}
+
+.dropDownBtn{
+  text-decoration: none;
+    color: black;
+    background-color: white;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.hometopmargin{
+  margin-top: 50px;
+}
+
+.card .card-action a{
+  text-transform:none;
+  font-size: 20px;
+}
+
+.logo{
+  padding-left: 15px;
+}
+
+.footerLeft{
+  padding-left: 40px;
+}
+
+.TescoFontColor{
+  color: #2061AE;
+  text-align: center;
+  font-size: 35px;
+}
+
+nav ul a{
+  color: #2061AE;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.grey-text{
+  font-size: 14px;
+}
+
+.white-text{
+  font-size: 14px;
+}
+
+.white-text1 {
+  color: #FFFFFF !important; 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.white-text2{
+  color: #FFFFFF !important;
+  font-size: 14px;
+}
+
+.card .card-title1 {
+color: #2061AE;
+font-size: 35px;
+padding-left: 20px;
+}
+
+.card .card-title2 {
+color: #2061AE;
+font-size: 20px;
+padding-left: 5px;
+}
+
+.container .row2 {
+  padding-left: 3px;
+}
+
+label1 {
+    font-size: 1.1rem;
+    color: #9e9e9e;
+    padding-left: 13px;
+}
