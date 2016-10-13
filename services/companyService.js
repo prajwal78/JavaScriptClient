@@ -1,27 +1,27 @@
 services.factory('companyService', function($resource) {
 
-    var getCompaniesResource = $resource('https://young-atoll-83319.herokuapp.com/companies', {}, {
+    var getCompaniesResource = $resource('http://localhost:9001/companies', {}, {
         getAllCompanies: {
             method: 'GET',
             isArray: true
         }
     });
 
-    var getCompanyResource = $resource('https://young-atoll-83319.herokuapp.com/company/:id', {}, {
+    var getCompanyResource = $resource('http://localhost:9001/company/:id', {}, {
         getCompany: {
             method: 'GET',
             isArray: true
         }
     });
 
-    var addNewCompanyResource = $resource('https://young-atoll-83319.herokuapp.com/company', {}, {
+    var addNewCompanyResource = $resource('http://localhost:9001/company', {}, {
         addNewCompany: {
             method: 'POST',
             isArray: false
         }
     });
 
-    var updateCompanyResource = $resource('https://young-atoll-83319.herokuapp.com/company', {}, {
+    var updateCompanyResource = $resource('http://localhost:9001/company', {}, {
         updateCompany: {
             method: 'PUT',
             isArray: false

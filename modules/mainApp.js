@@ -1,7 +1,7 @@
 var mainApp = angular.module('mainApp', ['ngRoute', 'ngResource', 'controllers', 'services']);
 
-mainApp.config(['$routeProvider', '$locationProvider', '$httpProvider',
-    function($routeProvider, $locationProvider, $httpProvider) {
+mainApp.config(['$routeProvider',
+    function($routeProvider) {
         $routeProvider.when('/home', {
             templateUrl: './partialViews/main_page_template.html'
         }).when('/register', {
