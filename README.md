@@ -4,6 +4,6 @@ The client is a single-page web application which is powered by ```AngularJS```.
    
 ### Deployment
    
-   The client is deployed to Heroku Cloud Platform using Docker. It can be browsed hitting this link https://peaceful-ridge-53978.herokuapp.com/#/home
+   The client is deployed to Heroku Cloud Platform using Docker. It can be browsed hitting this link https://hidden-gorge-54760.herokuapp.com/#/home
     
     
